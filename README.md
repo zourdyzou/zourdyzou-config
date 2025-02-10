@@ -1,15 +1,15 @@
 <div>
-  <h1 align="center"><a href="https://npm.im/@nerdfish/config">👮 @nerdfish/config</a></h1>
+  <h1 align="center"><a href="https://npm.im/@nerdfish/config">👮 @zourdyzou/config</a></h1>
   <strong>
-    Foundation configuration for nerdfish web projects
+    Foundation configuration for zourdy's web projects
   </strong>
 
 </div>
 
 ```
-npm install @nerdfish/config --save-dev
-pnpm install @nerdfish/config --save-dev
-yarn add @nerdfish/config --dev
+npm install @zourdyzou/config --save-dev
+pnpm install @zourdyzou/config --save-dev
+yarn add @zourdyzou/config --dev
 ```
 
 create a `reset.d.ts` file in your project root with the following content:
@@ -30,7 +30,7 @@ code --install-extension bradlc.vscode-tailwindcss
 Create a `biome.json` file in your project root with the following contents:
 
 ```json
-{ "extends": ["@nerdfish/config/biome"] }
+{ "extends": ["@zourdyzou/config/biome"] }
 ```
 
 ### VSCode Setup
@@ -89,14 +89,14 @@ Lastly, ensure you have the following scripts in your `package.json`:
 
 The inspiration and codebase was taken from
 [epicweb config](https://github.com/epicweb-dev/config), and modified to fit the
-needs of nerdfish.
+needs of zourdyzou.
 
 ### Prettier
 
 The easiest way to use this config is in your `package.json`:
 
 ```json
-"prettier": "@nerdfish/config/prettier"
+"prettier": "@zourdyzou/config/prettier"
 ```
 
 <details>
@@ -126,7 +126,7 @@ Create a `eslint.config.js` file in your project root with the following
 content:
 
 ```js
-import { config as defaultConfig } from '@nerdfish/config/eslint'
+import { config as defaultConfig } from '@zourdyzou/config/eslint'
 
 /** @type {import("eslint").Linter.Config} */
 export default [...defaultConfig]
@@ -184,7 +184,7 @@ Create a `tsconfig.json` file in your project root with the following content:
 
 ```json
 {
-	"extends": ["@nerdfish/config/typescript"],
+	"extends": ["@zourdyzou/config/typescript"],
 	"include": [
 		"**/*.ts",
 		"**/*.tsx",
